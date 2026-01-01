@@ -21,6 +21,9 @@ public class GameData {
     @TableField("name")
     private String name;
 
+    @TableField("image_url")
+    private String imageUrl;
+
     @TableField("created_at")
     private LocalDateTime createdAt;
 
@@ -58,6 +61,14 @@ public class GameData {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 
     public LocalDateTime getCreatedAt() {
